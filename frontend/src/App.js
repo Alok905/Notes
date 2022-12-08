@@ -1,17 +1,15 @@
-import { Box } from "@mui/system";
-import "./App.css";
-import HamburgerDrawer from "./components/Drawer";
-import NavBar from "./components/Navbar";
+import { Grid } from '@mui/material';
+import React from 'react';
+import Sidebar from './Components/Sidebar';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Box>
-        <NavBar />
-        <HamburgerDrawer />
-      </Box>
-    </div>
+    <Grid container>
+      <Grid item xs={6}>
+        <Sidebar />
+      </Grid>
+    </Grid>
   );
-}
+};
 
 export default App;
